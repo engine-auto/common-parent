@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<table border="1">  
+<tr th:each="user:${userList}">  
+ 	<td th:text="${user.id}"></td> 
+ 	<td th:text="${user.nickname}"></td>   
+</tr>  
+</table>
+</body>
+</html>

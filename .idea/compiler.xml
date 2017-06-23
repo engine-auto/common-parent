@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auto-mapper" />
+        <module name="auto-pojo" />
+        <module name="auto-redis" />
+        <module name="auto-search" />
+        <module name="auto-service" />
+        <module name="auto-web" />
+        <module name="common-utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auto-manager" target="1.6" />
+      <module name="auto-mapper" target="1.6" />
+      <module name="auto-pojo" target="1.6" />
+      <module name="auto-redis" target="1.6" />
+      <module name="auto-search" target="1.6" />
+      <module name="auto-service" target="1.6" />
+      <module name="auto-web" target="1.6" />
+      <module name="common-parent" target="1.6" />
+      <module name="common-utils" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

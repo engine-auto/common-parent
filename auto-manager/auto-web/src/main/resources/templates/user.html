@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+    <title>用户列表</title>
+  </head>
+  <body>
+    <h1>${message }</h1>
+    <h1>用户列表--<a th:href="@{/logout}" >退出登录</a>    </h1>
+    <h2>权限列表</h2>
+    <shiro:authenticated>用户已经登录显示此内容<br/></shiro:authenticated><br/>
+    <shiro:hasRole name="manager">manager角色登录显示此内容<br/></shiro:hasRole>
+    <shiro:hasRole name="admin">admin角色登录显示此内容<br/></shiro:hasRole>
+    <shiro:hasRole name="normal">normal角色登录显示此内容<br/></shiro:hasRole><br/>
+
+    <shiro:hasAnyRoles name="manager,admin">manager or admin 角色用户登录显示此内容<br/></shiro:hasAnyRoles><br/>
+    <shiro:principal/>-显示当前登录用户名<br/><br/>
+    <shiro:hasPermission name="add">add权限用户显示此内容<br/></shiro:hasPermission>
+    <shiro:hasPermission name="user:query">user:query权限用户显示此内容<br/></shiro:hasPermission>
+    <shiro:lacksPermission name="user:query">不具有user:query权限的用户显示此内容 <br/></shiro:lacksPermission>
+
+    <br/>所有用户列表：<br/>
+    <ul th:each="user:${userList}">
+            <li>用户名：<span th:text="${user.username}"></span>----密码：<span th:text="${user.password}"></span>---<a href="@{/user/edit/}${user.id}">修改用户（测试根据不同用户可访问权限不同，本例tom无权限，jack有权限）</a></li>
+    </ul>
+    <script type="text/javascript" src="${pageContext.request.contextPath }/webjarslocator/jquery/jquery.js"></script>
+  </body>
+</html>
