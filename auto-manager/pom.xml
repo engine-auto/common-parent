@@ -19,6 +19,8 @@
         <module>auto-service</module>
         <module>auto-search</module>
         <module>auto-redis</module>
+        <module>auto-interface</module>
+        <module>auto-provider</module>
     </modules>
     <artifactId>auto-manager</artifactId>
     <properties>

@@ -32,10 +32,10 @@
   <artifactId>auto-web</artifactId>
   <version>1.0-SNAPSHOT</version>
     <dependencies>
-        <!-- 依赖于service -->
+        <!-- 依赖于interface-->
         <dependency>
             <groupId>com.auto</groupId>
-            <artifactId>auto-service</artifactId>
+            <artifactId>auto-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!-- 依赖于search-->

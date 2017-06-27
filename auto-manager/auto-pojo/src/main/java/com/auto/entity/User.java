@@ -3,6 +3,7 @@ package com.auto.entity;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -10,8 +11,10 @@ import java.util.Set;
 
 @Entity
 @Table(name = "t_user")
-public class User {
+public class User implements Serializable{
 
+
+    private static final long serialVersionUID = -6587374005690394028L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
