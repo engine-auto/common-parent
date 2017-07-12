@@ -24,7 +24,7 @@ import com.alibaba.druid.support.http.WebStatFilter;
 @SpringBootApplication
 @ImportResource("classpath:consumers.xml")
 @ServletComponentScan
-@MapperScan("com.auto.mapper")
+@MapperScan("com.auto.dao")
 public class Application implements EmbeddedServletContainerCustomizer {
 
 	@Bean

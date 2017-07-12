@@ -11,6 +11,7 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomi
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.concurrent.CountDownLatch;
@@ -18,7 +19,8 @@ import java.util.concurrent.CountDownLatch;
 @ImportResource("classpath:providers.xml")
 @SpringBootApplication
 @ServletComponentScan
-@MapperScan("com.auto.mapper")
+@MapperScan("com.auto.dao")
+@Transactional
 public class Application {
 
     @RequestMapping("/hello")

@@ -1,4 +1,4 @@
-package com.auto.mapper;
+package com.auto.dao;
 
 import com.auto.entity.User;
 import org.apache.ibatis.annotations.*;

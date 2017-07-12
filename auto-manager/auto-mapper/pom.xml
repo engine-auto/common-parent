@@ -23,5 +23,11 @@
             <artifactId>auto-pojo</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- 依赖于utils子模块 -->
+        <dependency>
+            <groupId>com.auto</groupId>
+            <artifactId>common-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

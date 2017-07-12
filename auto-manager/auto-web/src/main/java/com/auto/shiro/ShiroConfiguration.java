@@ -12,26 +12,24 @@ import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-
 @Configuration
 public class ShiroConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(ShiroConfiguration.class);
 
     @Bean
-    public EhCacheManager getEhCacheManager() {  
-        EhCacheManager em = new EhCacheManager();  
-        em.setCacheManagerConfigFile("classpath:ehcache-shiro.xml");  
-        return em;  
-    }  
+    public EhCacheManager getEhCacheManager() {
+        EhCacheManager em = new EhCacheManager();
+        em.setCacheManagerConfigFile("classpath:ehcache-shiro.xml");
+        return em;
+    }
 
     @Bean(name = "myShiroRealm")
-    public MyShiroRealm myShiroRealm(EhCacheManager cacheManager) {  
-        MyShiroRealm realm = new MyShiroRealm(); 
+    public MyShiroRealm myShiroRealm(EhCacheManager cacheManager) {
+        MyShiroRealm realm = new MyShiroRealm();
         realm.setCacheManager(cacheManager);
         return realm;
-    }  
+    }
 
     /**
      * 注册DelegatingFilterProxy（Shiro）
@@ -50,7 +48,7 @@ public class ShiroConfiguration {
 //  public FilterRegistrationBean filterRegistrationBean() {
 //      FilterRegistrationBean filterRegistration = new FilterRegistrationBean();
 //      filterRegistration.setFilter(new DelegatingFilterProxy("shiroFilter"));
-//      //  该值缺省为false,表示生命周期由SpringApplicationContext管理,设置为true则表示由ServletContainer管理  
+//      //  该值缺省为false,表示生命周期由SpringApplicationContext管理,设置为true则表示由ServletContainer管理
 //      filterRegistration.addInitParameter("targetFilterLifecycle", "true");
 //      filterRegistration.setEnabled(true);
 //      filterRegistration.addUrlPatterns("/*");// 可以自己灵活的定义很多，避免一些根本不需要被Shiro处理的请求被包含进来
@@ -73,7 +71,7 @@ public class ShiroConfiguration {
     public DefaultWebSecurityManager getDefaultWebSecurityManager(MyShiroRealm myShiroRealm) {
         DefaultWebSecurityManager dwsm = new DefaultWebSecurityManager();
         dwsm.setRealm(myShiroRealm);
-//      <!-- 用户授权/认证信息Cache, 采用EhCache 缓存 --> 
+//      <!-- 用户授权/认证信息Cache, 采用EhCache 缓存 -->
         dwsm.setCacheManager(getEhCacheManager());
         return dwsm;
     }
@@ -122,7 +120,7 @@ public class ShiroConfiguration {
     public ShiroFilterFactoryBean getShiroFilterFactoryBean(DefaultWebSecurityManager securityManager) {
 
         ShiroFilterFactoryBean shiroFilterFactoryBean = new MShiroFilterFactoryBean();
-        // 必须设置 SecurityManager  
+        // 必须设置 SecurityManager
         shiroFilterFactoryBean.setSecurityManager(securityManager);
         // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
         shiroFilterFactoryBean.setLoginUrl("/login");
