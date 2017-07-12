@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auto-interface" />
         <module name="auto-mapper" />
         <module name="auto-pojo" />
+        <module name="auto-provider" />
         <module name="auto-redis" />
         <module name="auto-search" />
         <module name="auto-service" />
@@ -16,9 +18,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auto-dubbo-interface" target="1.6" />
+      <module name="auto-dubbo-provider" target="1.6" />
+      <module name="auto-interface" target="1.6" />
       <module name="auto-manager" target="1.6" />
       <module name="auto-mapper" target="1.6" />
       <module name="auto-pojo" target="1.6" />
+      <module name="auto-provider" target="1.6" />
       <module name="auto-redis" target="1.6" />
       <module name="auto-search" target="1.6" />
       <module name="auto-service" target="1.6" />

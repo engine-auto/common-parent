@@ -7,14 +7,17 @@
           <element id="module-output" name="auto-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="auto-service-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="auto-service" />
+          <element id="archive" name="auto-interface-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="auto-interface" />
           </element>
           <element id="archive" name="auto-mapper-1.0-SNAPSHOT.jar">
             <element id="module-output" name="auto-mapper" />
           </element>
           <element id="archive" name="auto-pojo-1.0-SNAPSHOT.jar">
             <element id="module-output" name="auto-pojo" />
+          </element>
+          <element id="archive" name="common-utils-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="common-utils" />
           </element>
           <element id="archive" name="auto-search-1.0-SNAPSHOT.jar">
             <element id="module-output" name="auto-search" />
@@ -29,6 +32,7 @@
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.5.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.11" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.11" />
@@ -57,10 +61,15 @@
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.42" />
           <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.0" />
           <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:1.3.0" />
-          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.4" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.1" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-devtools:1.5.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.4" />
+          <element id="library" level="project" name="Maven: tk.mybatis:mapper:3.4.0" />
+          <element id="library" level="project" name="Maven: javax.persistence:persistence-api:1.0" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:4.2.1" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.16" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.0" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.4.RELEASE" />
@@ -74,7 +83,6 @@
           <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.0.RELEASE" />
           <element id="library" level="project" name="Maven: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" />
           <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy:2.4.11" />
-          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.16" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.25" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.4.1212.jre7" />
           <element id="library" level="project" name="Maven: junit:junit:4.12" />

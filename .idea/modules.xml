@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-interface/auto-interface.iml" filepath="$PROJECT_DIR$/auto-manager/auto-interface/auto-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-manager.iml" filepath="$PROJECT_DIR$/auto-manager/auto-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-mapper/auto-mapper.iml" filepath="$PROJECT_DIR$/auto-manager/auto-mapper/auto-mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-pojo/auto-pojo.iml" filepath="$PROJECT_DIR$/auto-manager/auto-pojo/auto-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-provider/auto-provider.iml" filepath="$PROJECT_DIR$/auto-manager/auto-provider/auto-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-redis/auto-redis.iml" filepath="$PROJECT_DIR$/auto-manager/auto-redis/auto-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-search/auto-search.iml" filepath="$PROJECT_DIR$/auto-manager/auto-search/auto-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/auto-manager/auto-service/auto-service.iml" filepath="$PROJECT_DIR$/auto-manager/auto-service/auto-service.iml" />
